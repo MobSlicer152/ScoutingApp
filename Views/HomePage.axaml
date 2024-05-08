@@ -1,0 +1,53 @@
+<TabItem xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:ScoutingApp.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        x:Class="ScoutingApp.Views.HomePage"
+        x:DataType="vm:HomePageViewModel"
+        Header="Home">
+	<Grid>
+	    <StackPanel Margin="10,10,-10,0" HorizontalAlignment="Center" VerticalAlignment="Center">
+	        <StackPanel Margin="0,0,0,30">
+	            <TextBlock Text="Scouter name" TextAlignment="Center" />
+	            <TextBox Margin="0,10,0,0" />
+	        </StackPanel>
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+			    <StackPanel Margin="0,0,50,0">
+			        <TextBlock Text="Team Number"/>
+			        <NumericUpDown ShowButtonSpinner="false" Margin="0,10,0,0" />
+			    </StackPanel>
+			    <StackPanel>
+			        <TextBlock Text="Match Number"/>
+			        <NumericUpDown ShowButtonSpinner="false" Margin="0,10,0,0" />
+			    </StackPanel>
+			</StackPanel>
+			<StackPanel Margin="0,30,0,0" HorizontalAlignment="Center">
+			    <TextBlock Text="Robot position" />
+			    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+			        <StackPanel Margin="-25,0,0,0">
+			            <RadioButton GroupName="RobotPosition" Content="Blue 1" />
+			            <RadioButton GroupName="RobotPosition" Content="Blue 2" />
+			            <RadioButton GroupName="RobotPosition" Content="Blue 3" />
+			        </StackPanel>
+			        <StackPanel Margin="10,0,0,0">
+			            <RadioButton GroupName="RobotPosition" Content="Red 1" />
+			            <RadioButton GroupName="RobotPosition" Content="Red 2" />
+			            <RadioButton GroupName="RobotPosition" Content="Red 3" />
+			        </StackPanel>
+			    </StackPanel>
+			    <Button Content="Clear data" Margin="0,30,0,0" />
+			</StackPanel>
+			<StackPanel Margin="0,30,0,0" HorizontalAlignment="Center">
+				<TextBlock Text="Game" />
+	            <ComboBox SelectedIndex="0">
+					<ComboBoxItem>Crescendo (2024)</ComboBoxItem>
+	    	    </ComboBox>
+			</StackPanel>
+			<StackPanel Margin="0,30,0,0" HorizontalAlignment="Center">
+			    <CheckBox Margin="-50,-10,0,0" Content="Flip field" />
+			    <Image />
+			</StackPanel>
+		</StackPanel>
+	</Grid>
+</TabItem>
