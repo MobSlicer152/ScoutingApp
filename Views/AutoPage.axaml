@@ -1,10 +1,9 @@
-<TabItem xmlns="https://github.com/avaloniaui"
+<Grid xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="using:ScoutingApp.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         x:Class="ScoutingApp.Views.AutoPage"
-        x:DataType="vm:AutoPageViewModel"
-        Header="Auto">
+        x:DataType="vm:AutoPageViewModel">
     <TextBlock Text="Auto" />
-</TabItem>
+</Grid>

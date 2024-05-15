@@ -16,9 +16,13 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-	<TabControl>
-		<v:HomePage />
-		<v:AutoPage />
+	<TabControl TabStripPlacement="Right">
+        <TabItem Header="Home">
+            <v:HomePage />
+        </TabItem>
+        <TabItem Header="Auto">
+            <v:AutoPage />
+        </TabItem>
 	</TabControl>
 
 </Window>
